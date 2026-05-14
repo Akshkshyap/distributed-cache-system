@@ -1,8 +1,5 @@
-#include<iostream>
-using namespace std;
-
-
-struct Node{
+class Node{
+public: 
     int key;
     int value;
 
@@ -12,6 +9,6 @@ struct Node{
     Node(int k, int v){
         key = k;
         value = v;
-        left = right = NULL;
+        left = right = nullptr;
     }
 };
