@@ -21,4 +21,8 @@ int main(){
     cache.display();
 
     cout << "Get 2: " << cache.get(2) << endl;
+    
+    cache.display();
+    
+    cout << "Get 4: " << cache.get(4) << endl;
 }
