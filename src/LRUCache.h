@@ -10,7 +10,7 @@ class LRUCache{
 private:
     int capacity;
 
-    unordered_map<int, Node*> cache;
+    unordered_map<int, Node*> cache; //(key, node)
 
     Node* head;
     Node* tail;
