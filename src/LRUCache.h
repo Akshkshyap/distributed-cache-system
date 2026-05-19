@@ -17,6 +17,7 @@ private:
     
     void addNode(Node* node);
     void deleteNode(Node* node);
+    ~LRUCache();
 
 public:
     LRUCache(int cap);

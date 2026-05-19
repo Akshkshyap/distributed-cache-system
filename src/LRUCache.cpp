@@ -13,6 +13,17 @@ LRUCache::LRUCache(int cap){
     tail->prev = head;
 }
 
+LRUCache::~LRUCache(){ //add destructor
+    Node* curr = head;
+    
+    while(curr != nullptr){
+        Node* temp = curr;
+        curr = curr->next;
+
+        delete temp;
+    }
+}
+
 void LRUCache::addNode(Node* newNode){
     Node* temp = head->next;
     
