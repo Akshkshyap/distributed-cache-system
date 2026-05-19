@@ -17,11 +17,12 @@ private:
     
     void addNode(Node* node);
     void deleteNode(Node* node);
-    ~LRUCache();
 
 public:
     LRUCache(int cap);
 
+    ~LRUCache();
+    
     int get(int key);
 
     void put(int key, int value);
